@@ -1,0 +1,344 @@
+[
+    {
+        "id": 1,
+        "usuario": "Anonimo\u2728",
+        "taller": "3ro G",
+        "nombreObra": "Retrato de una mujer caribe\u00f1a",
+        "descripcion": "Esta obra tan hermosa compuesta por materiales como carton y pintura, fue desarrollada por Emelia una alumna de 3ro G.",
+        "imagen": "6787bc442deca_3RO G EMELIA.jpg",
+        "comentarios": [
+            {
+                "usuario": "vilson",
+                "comentario": "ta linda",
+                "fecha": "2025-01-16 01:55:20"
+            },
+            {
+                "usuario": "Anonimo\u2728",
+                "comentario": "waos",
+                "fecha": "2025-01-16 02:00:59"
+            },
+            {
+                "usuario": "Anonimo\u2728",
+                "comentario": "waos",
+                "fecha": "2025-01-16 02:05:18"
+            },
+            {
+                "usuario": "Anonimo\u2728",
+                "comentario": "waos",
+                "fecha": "2025-01-16 02:05:53"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "usuario": "Anonimo\u2728",
+        "taller": "3ro B",
+        "nombreObra": "Maqueta de una c\u00e1mara 3D",
+        "descripcion": "Esta maqueta es una c\u00e1mara 3D que en su interior nos muestra la evoluci\u00f3n de la moda a trav\u00e9s de los a\u00f1os, desarrollada por una alumna de 3ro B.",
+        "imagen": "6787bc60c77eb_3RO B (2).jpg"
+    },
+    {
+        "id": 3,
+        "usuario": "Anonimo\u2728",
+        "taller": "3ro A",
+        "nombreObra": "Mu\u00f1eca sin rostro",
+        "descripcion": "Esta es una representaci\u00f3n de una Mu\u00f1eca sin rostro dominicana de color negro con su vestimenta de color naranja, desarrollada por una alumna de 3ro A.",
+        "imagen": "6787bca23adf8_3RO A.jpg"
+    },
+    {
+        "id": 4,
+        "usuario": "Anonimo\u2728",
+        "taller": "Trompeta Dorada",
+        "nombreObra": "3ro F",
+        "descripcion": "Esta es una representaci\u00f3n de una trompeta de color dorado desarrollado por un alumno de 3ro F.",
+        "imagen": "6787bccaed541_3RO F (2).jpg"
+    },
+    {
+        "id": 5,
+        "usuario": "Anonimo\u2728",
+        "taller": "3ro D",
+        "nombreObra": "Pintura paisaj\u00edsta",
+        "descripcion": "Esta es una pintura con una t\u00e9nica de oleo sobre lienso de un paisaje compuesto por nubes y sol, desarrollado por Danet una alumna de 3ro D.",
+        "imagen": "6787bce9c674f_3RO D DANET.jpg"
+    },
+    {
+        "id": 6,
+        "usuario": "Anonimo\u2728",
+        "taller": "3ro E",
+        "nombreObra": "Guitarra de cart\u00f3n",
+        "descripcion": "Esta es una representaci\u00f3n de carton de la guitarra un instrumento muy hermoso, desarrollado por un alumno de 3ro E.",
+        "imagen": "6787bd0a86e84_3RO E.jpg"
+    },
+    {
+        "id": 7,
+        "usuario": "Anonimo\u2728",
+        "taller": "3ro F",
+        "nombreObra": "Mu\u00f1eca sin rostro",
+        "descripcion": "Esta es una representaci\u00f3n de una Mu\u00f1eca sin rostro dominicana de color negro con su vestimenta de color verde, desarrollada por una alumna de 3ro F.",
+        "imagen": "6787cabb9c32e_3RO F.jpg"
+    },
+    {
+        "id": 8,
+        "usuario": "Anonimo\u2728",
+        "taller": "3ro A",
+        "nombreObra": "Trompeta Azul",
+        "descripcion": "Esta es una representaci\u00f3n de una trompeta de color azul con detalles dorados desarrollado por una alumna de 3ro A.",
+        "imagen": "6787cda7ab06a_3RO A (2).jpg"
+    },
+    {
+        "id": 9,
+        "usuario": "Anonimo\u2728",
+        "taller": "3ro D",
+        "nombreObra": "Pintura de la m\u00fasica",
+        "descripcion": "Esta es una pintura con una t\u00e9nica de oleo sobre lienso con un fondo colorido con instrumentos y signos de m\u00fasicales, desarrollada por Reynoso un alumno de 3ro D.",
+        "imagen": "6787cdd634d42_3RO D REYNOSO.jpg"
+    },
+    {
+        "id": 10,
+        "usuario": "Anonimo\u2728",
+        "taller": "3ro C",
+        "nombreObra": "Mu\u00f1eca sin rostro",
+        "descripcion": "Esta es una representaci\u00f3n de una Mu\u00f1eca sin rostro dominicana de color negro con su vestimenta de color roja y blanca, desarrollada por una alumna de 3ro C.",
+        "imagen": "6787ce13b7502_3RO C.jpg"
+    },
+    {
+        "id": 11,
+        "usuario": "Anonimo\u2728",
+        "taller": "4to MG",
+        "nombreObra": "Angel tocando la trompeta",
+        "descripcion": "Esta es una representaci\u00f3n de un angel vestido de blanco tocando la trompeta realizado con materiles como pintura y cart\u00f3n desarrollado por una alumna de 4to MG.",
+        "imagen": "6787ce79aa47e_4TO MG.jpg"
+    },
+    {
+        "id": 12,
+        "usuario": "Anonimo\u2728",
+        "taller": "4to LT",
+        "nombreObra": "Mu\u00f1eca sin rostro",
+        "descripcion": "Esta es una representaci\u00f3n de una Mu\u00f1eca sin rostro dominicana de color negro con su vestimenta de color amarillo, desarrollada por una alumna de 4to LT.",
+        "imagen": "6787cea45a9c7_4TO LT.jpg"
+    },
+    {
+        "id": 13,
+        "usuario": "Anonimo\u2728",
+        "taller": "4to EEM",
+        "nombreObra": "Pintura paisaj\u00edsta",
+        "descripcion": "Esta es una pintura con una t\u00e9nica de oleo sobre lienso de un paisaje compuesto por arboles, que muestra la contaminaci\u00f3n ambiental, desarrollado por una alumna de 4to EEM.",
+        "imagen": "6787ced912135_4TO EEM (2).jpg"
+    },
+    {
+        "id": 14,
+        "usuario": "Anonimo\u2728",
+        "taller": "4TO ER",
+        "nombreObra": "Florero con palitos",
+        "descripcion": "Este es un florero desarrollo con palitos de paleta que tiene flores blancas de papel, desarrollado por una alumna de 4to ER.",
+        "imagen": "6787cefe37fde_4TO ER (3).jpg"
+    },
+    {
+        "id": 15,
+        "usuario": "Anonimo\u2728",
+        "taller": "4to MG",
+        "nombreObra": "Casa de jengibre",
+        "descripcion": "Esta es una representaci\u00f3n de una casa de jengibre con materiales como cart\u00f3n y hojas de colores, desarrollada por una alumna de 4to MG.",
+        "imagen": "6787cf7fb65f9_4TO MG (2).jpg"
+    },
+    {
+        "id": 16,
+        "usuario": "Anonimo\u2728",
+        "taller": "4to RAA",
+        "nombreObra": "Tambora",
+        "descripcion": "Esta es la representaci\u00f3n de una tambora de color azul con detalles de color negro y amarillo, desarrollada por un alumno de 4to RAA.",
+        "imagen": "6787cfb725f24_4TO RAA (2).jpg"
+    },
+    {
+        "id": 17,
+        "usuario": "Anonimo\u2728",
+        "taller": "4to DAAI",
+        "nombreObra": "Nacimiento de Jes\u00fas",
+        "descripcion": "Esta es una representaci\u00f3n del Nacimiento del ni\u00f1o Jes\u00fas en belen desarrollado por un alumno de 4to DAAI",
+        "imagen": "6787cfd80e8d3_4TO DAAI (2).jpg"
+    },
+    {
+        "id": 18,
+        "usuario": "Anonimo\u2728",
+        "taller": "4to EEM",
+        "nombreObra": "Pintura paisaj\u00edsta",
+        "descripcion": "Esta es una pintura con una t\u00e9nica de oleo sobre lienso de una playa compuesta por tortugas, que muestra la contaminaci\u00f3n ambiental, desarrollado por una alumna de 4to EEM.",
+        "imagen": "6787cffe0ef9f_4TO EEM (3).jpg"
+    },
+    {
+        "id": 19,
+        "usuario": "Anonimo\u2728",
+        "taller": "4to MG",
+        "nombreObra": "Florero con palitos",
+        "descripcion": "Este es un florero desarrollo con palitos de paleta que tiene un tulipan blanco de papel, desarrollado por una alumna de 4to MG.",
+        "imagen": "6787d01b4c1a5_4TO MG (4).jpg"
+    },
+    {
+        "id": 20,
+        "usuario": "Anonimo\u2728",
+        "taller": "4TO ER",
+        "nombreObra": "Tambora",
+        "descripcion": "Esta es la representaci\u00f3n de una tambora de color verde con detalles de color negro y rojo, desarrollada por un alumno de 4to ER.",
+        "imagen": "6787d078b8f31_4TO ER (2).jpg"
+    },
+    {
+        "id": 21,
+        "usuario": "Anonimo\u2728",
+        "taller": "5TO DAAI",
+        "nombreObra": "Mu\u00f1eca sin rostro",
+        "descripcion": "Esta es una representaci\u00f3n de una Mu\u00f1eca sin rostro dominicana de color negro con su vestimenta de color amarillo, naranja y verde desarrollada por una alumna de 5to DAAI.",
+        "imagen": "6787d0c80e9ab_5TO DAAI.jpg"
+    },
+    {
+        "id": 22,
+        "usuario": "Anonimo\u2728",
+        "taller": "5TO GAT",
+        "nombreObra": "Escultura",
+        "descripcion": "Esta es una representaci\u00f3n de una escultura de las antiguas civilizaciones, desarrollada por una alumna de 5to GAT.",
+        "imagen": "6787d0e8f1cb8_5TO GAT.jpg"
+    },
+    {
+        "id": 23,
+        "usuario": "Anonimo\u2728",
+        "taller": "5TO LT",
+        "nombreObra": "Pintura paisajista sobre una botella",
+        "descripcion": "Esta es la representaci\u00f3n de una pintura de un paisaje dominicano en una botella con una t\u00e9nica de oleo sobre cristal, desarrollada por una alumna de 5to LT.",
+        "imagen": "6787d221b893b_5TO LT.jpg"
+    },
+    {
+        "id": 24,
+        "usuario": "Anonimo\u2728",
+        "taller": "5TO MEC",
+        "nombreObra": "Pintura de un retrato sobre una",
+        "descripcion": "Esta es una maqueta de una casa hecha con materiales como el cart\u00f3n, papel y pintura, desarrollada por un alumno de 5to de MEC.",
+        "imagen": "6787d24d2d352_5TO MEC.jpg"
+    },
+    {
+        "id": 25,
+        "usuario": "Anonimo\u2728",
+        "taller": "5TO MG",
+        "nombreObra": "Pil\u00f3n de metal",
+        "descripcion": "Esta es la representaci\u00f3n de un pil\u00f3n hecho con netal pintado de color marr\u00f3n con una flor en el centro, desarrollado por un alumno de 5to MG.",
+        "imagen": "6787d26bbd082_5TO MG.jpg"
+    },
+    {
+        "id": 26,
+        "usuario": "Anonimo\u2728",
+        "taller": "5TO MEC",
+        "nombreObra": "Maracas",
+        "descripcion": "Esta es la representaci\u00f3n de maracas de higueros con una bandera dominicana pintada en el centro, desarrollada por un alumnode 5to MEC.",
+        "imagen": "6787d297d87fc_5TO MEC (3).jpg"
+    },
+    {
+        "id": 27,
+        "usuario": "Anonimo\u2728",
+        "taller": "5TO MG",
+        "nombreObra": "Pil\u00f3n de madera",
+        "descripcion": "Esta es la representaci\u00f3n de un pil\u00f3n de madera pintado con los colores patrios rojo, azul y blanco y la bandera dominicana en el centro, desarrollado por una alumna de 5to MG.",
+        "imagen": "6787d2c543fda_5TO RAA (2).jpg"
+    },
+    {
+        "id": 28,
+        "usuario": "Anonimo\u2728",
+        "taller": "5TO EE",
+        "nombreObra": "Estrella Dorada",
+        "descripcion": "Esta es la representaci\u00f3n de una estrella hecha con cart\u00f3n y pintada con pintura en aerosol de color dorado, desarrollada por un alumno de 5to EE.",
+        "imagen": "6787d536b6212_5TO EE (2).jpg"
+    },
+    {
+        "id": 29,
+        "usuario": "Anonimo\u2728",
+        "taller": "5TO ER",
+        "nombreObra": "Pareja de Angeles",
+        "descripcion": "Esta es la representaci\u00f3n de una pareja de angeles de color blanco con detalles dorados y plateado, desarrollado por una alumna de 5to ER.",
+        "imagen": "6787d558848d9_5TO ER.jpg"
+    },
+    {
+        "id": 30,
+        "usuario": "Anonimo\u2728",
+        "taller": "5TO LT",
+        "nombreObra": "Pintura paisajista",
+        "descripcion": "Esta es la representaci\u00f3n de una pintura de un paisaje de un bosque, con una t\u00e9nica de oleo sobre lienzo, desarrollada por una alumna de 5to LT.",
+        "imagen": "6787d57b2f61a_5TO LT (3).jpg"
+    },
+    {
+        "id": 31,
+        "usuario": "Anonimo\u2728",
+        "taller": "6TO LT",
+        "nombreObra": "Cuchara de Madera",
+        "descripcion": "Esta es la representaci\u00f3n de una cuchara de madera que tiene pintado un paisaje dominicano, desarrollado por John Kerry un alumno de 6to LT.",
+        "imagen": "6787d61dd5c69_6TO JONH LT.jpg"
+    },
+    {
+        "id": 32,
+        "usuario": "Anonimo\u2728",
+        "taller": "6TO DAAI",
+        "nombreObra": "Maracas de higueros",
+        "descripcion": "Esta es la representaci\u00f3n de dos maracas hechas con higuero y pintadas con un paisaje dominicano, desarrolladas por Laura Nova una alumna de 6to DAAI.",
+        "imagen": "6787d648ecc58_6TO DAAI LAURA.jpg"
+    },
+    {
+        "id": 33,
+        "usuario": "Anonimo\u2728",
+        "taller": "6TO LT",
+        "nombreObra": "Maceta con un girasol",
+        "descripcion": "Esta es la representaci\u00f3n de una maceta de barro que tiene una pintura de un paisaje dominicano, desarrollado por Elizabeth Dom\u00ednguez una alumna de 6to LT.",
+        "imagen": "6787d67ddf7f8_6TO LT ELIZABETH.jpg"
+    },
+    {
+        "id": 34,
+        "usuario": "Anonimo\u2728",
+        "taller": "6TO DAAI",
+        "nombreObra": "Limpiabotas",
+        "descripcion": "Esta es la representaci\u00f3n de un limpiabotas de madera que tiene pintado un paisaje dominicano, desarrollado por Arisleidy Holguin una alumna de 6to DAAI.",
+        "imagen": "6787d6ad51642_6TO  DAAI ARIS.jpg"
+    },
+    {
+        "id": 35,
+        "usuario": "Anonimo\u2728",
+        "taller": "6TO EE",
+        "nombreObra": "Pintura paisajista sobre una botella",
+        "descripcion": "Esta es la representaci\u00f3n de una pintura de un paisaje dominicano en una botella con una t\u00e9nica de oleo sobre cristal, desarrollada por un alumno de 6to EE.",
+        "imagen": "6787d6d1add45_6TO EE.jpg"
+    },
+    {
+        "id": 36,
+        "usuario": "Anonimo\u2728",
+        "taller": "6TO DAAI",
+        "nombreObra": "Retrato pintado sobre yeso.",
+        "descripcion": "Esta es la representaci\u00f3n de una pintura de un retrato con una t\u00e9nica oleo sobre lienzo, desarrollada por una alumna de 6to MG.",
+        "imagen": "6787d6fbd9782_6TO MG.jpg"
+    },
+    {
+        "id": 37,
+        "usuario": "Anonimo\u2728",
+        "taller": "6TO MEC",
+        "nombreObra": "Pil\u00f3n de metal",
+        "descripcion": "Esta es la representaci\u00f3n de un pil\u00f3n realizado con el material de metal, desarrollado por un alumno de 6to MEC.",
+        "imagen": "6787d7213f66f_6TO MEC.jpg"
+    },
+    {
+        "id": 38,
+        "usuario": "Anonimo\u2728",
+        "taller": "6TO EE",
+        "nombreObra": "Mu\u00f1eca sin rostro",
+        "descripcion": "Esta es la representaci\u00f3n de una Mu\u00f1eca sin rostro vestida de los colorea patrios dominicanos, desarrollada por una alumna de 6to EE.",
+        "imagen": "6787d7d7d4ff7_6TO EE (2).jpg"
+    },
+    {
+        "id": 39,
+        "usuario": "Anonimo\u2728",
+        "taller": "6TO DAAI",
+        "nombreObra": "Casa de cart\u00f3n",
+        "descripcion": "Esta es la representaci\u00f3n de una casa de cart\u00f3n t\u00edpica dominicana, desarrolladapo la alumna Yuliandry Estrella de 6to DAAI.",
+        "imagen": "6787d7fe4645a_6TO DAAI YULIANDRY.jpg"
+    },
+    {
+        "id": 40,
+        "usuario": "Anonimo\u2728",
+        "taller": "6TO DAAI",
+        "nombreObra": "Maceta con un girasol",
+        "descripcion": "Esta es la representaci\u00f3n de una maceta de barro que tiene una pintura de un paisaje dominicano, desarrollada por Ruth Mercado una alumna de 6to DAAI",
+        "imagen": "6787d82f2b74d_6TO DAAI RUTH (2).jpg"
+    }
+]

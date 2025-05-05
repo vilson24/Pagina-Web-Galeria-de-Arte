@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    background-color: #f8f9fa;
+    justify-content: center;
+}
+
+/* Encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Fondo blanco */
+    padding: 10px 20px;
+    border-bottom: 2px solid #f3f3f3;
+}
+
+
+
+.logo-img {
+    height: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #823e23; 
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.menu ul li a:hover {
+    background-color: #dc7c71af;
+}
+
+/* Configuración del slider */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 400px;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+.slide {
+    position: relative;
+    height: 400px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%); /* Oscurece más para destacar texto */
+    animation: zoomIn 12s infinite alternate; /* Movimiento de zoom suave */
+}
+
+/* Título principal */
+.titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    animation: fadeIn 1.5s ease-out forwards;
+    text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo individual de cada línea */
+.titulo .linea-1 {
+    font-size: 3.0rem;
+    color: wheat; /* Dorado para elegancia */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); /* Resalta con sombra */
+    animation: slideIn 1.8s ease-out forwards;
+}
+
+.titulo .linea-2 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    animation: slideIn 2.2s ease-out forwards;
+}
+
+/* Animación de zoom para la imagen */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2.1);
+    }
+}
+
+/* Animación de entrada del título */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 2;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover dinámico para el texto */
+.titulo:hover .linea-1 {
+    color: white; /* Cambia a naranja */
+    transform: scale(1.1); /* Aumenta ligeramente */
+    transition: all 0.3s ease;
+}
+
+.titulo:hover .linea-2 {
+    color:wheat; /* Cambia a azul claro */
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+
+
+
+/* Frases en Tarjetas */
+.frases-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.tarjeta {
+    background-color:#dca371;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+    font-size: 20px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1);
+}
+
+/* Invitación */
+.invitacion {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.invitacion h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.invitacion p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Galería */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 220px;
+    height: 300px; /* Altura fija para uniformidad */
+    position: relative; /* Necesario para manejar contenido interno */
+}
+
+.card img {
+    width: 100%;
+    height: 100%; /* Imagen cubre la tarjeta */
+    object-fit: cover; /* Ajusta la imagen dentro del espacio */
+    transition: transform 0.3s ease;
+}
+
+/* Información oculta */
+.card .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(20px); /* Desplazada ligeramente hacia abajo */
+    box-sizing: border-box;
+}
+
+/* Efecto hover */
+.card:hover img {
+    transform: scale(1.1); /* Zoom en la imagen */
+}
+
+.card:hover .info {
+    opacity: 1; /* Visible al pasar el mouse */
+    transform: translateY(0); /* Vuelve a su posición original */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Pequeño zoom en la tarjeta completa */
+}
+/* Estilo del texto */
+.card .info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card .info p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* Ajustes para pantallas medianas (tabletas y móviles horizontales) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        display: block; /* Cambiar de flex a bloque para que se apilen verticalmente */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Separar los elementos del menú */
+    }
+
+    .slider {
+        height: auto;
+    }
+
+    .frases-tarjetas {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+*Footer*/
+
+.Footer {
+  background-color: #ebebeb;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-container div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+  color: #f2f2f7;
+}
+
+.footer p, .footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #eeece5;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(233, 223, 223, 0.7);
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-container div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+  color: #dbe1e6;
+}
+
+.footer p, .footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #d3d4e6;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.iconos {
+    display: flex;
+    gap: 10px; 
+    padding: 15px;
+  }
+  
+  .icono {
+    font-size: 24px;
+
+  }
+

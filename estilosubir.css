@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* Estilo global */
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f0e3; /* Fondo en tonos beige */
+}
+
+/* Estilo para el header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Fondo blanco */
+    padding: 10px 20px;
+    border-bottom: 2px solid #f3f3f3;
+}
+
+
+
+.logo-img {
+    height: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #823e23; 
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.menu ul li a:hover {
+    background-color: #dc7c71af;
+}
+
+.container {
+    margin: 100px auto 20px auto; /* Más espacio superior e inferior */
+    padding: 30px; /* Aumenta el padding interno */
+    max-width: 600px; /* Contenedor más ancho */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+label {
+    color: #5e4636;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    margin-bottom: 10px; /* Menos espacio entre campos */
+    padding: 8px 10px; /* Reducir padding para cuadros de texto */
+    border: 1px solid #d1c4b7;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px; /* Texto más pequeño */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #823e23;
+    box-shadow: 0 0 8px rgba(130, 62, 35, 0.3);
+    outline: none;
+}
+
+button {
+    background-color: #823e23;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px; /* Botón más compacto */
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #5e4636;
+    transform: scale(1.02);
+}
+/* Estilo para la página de subir obras */
+.container-upload {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #4b2e2e;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #8b5e3c;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+form input {
+    height: 45px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+
+
+/* Estilo para la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #4b2e2e;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #6f4d3d;
+}
+
+/* Estilo para los detalles de la obra */
+.details-card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-image {
+    flex: 1;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.details-info {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.details-info h2 {
+    color: #4b2e2e;
+}
+
+.details-info p {
+    font-size: 1.1em;
+    color: #6f4d3d;
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: #8b5e3c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #6f4d3d;
+    transform: scale(1.1); /* Efecto de zoom */
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    
+    body {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        display: block; /* Cambiar de flex a bloque para que se apilen verticalmente */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Separar los elementos del menú */
+    }
+
+    .details-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details-image {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .details-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    
+}
+/* Estilos generales para el contenedor principal */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f0e3; /* Fondo beige claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para el formulario de subir obra */
+.upload-form {
+    width: 100%;
+    max-width: 600px; /* Ancho máximo del formulario */
+    background-color: #fffaf0; /* Fondo claro */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.upload-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #8b5e3c; /* Color marrón */
+    font-weight: bold;
+}
+
+.upload-form input,
+.upload-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #8b5e3c; /* Color marrón */
+    border-radius: 8px;
+    margin-bottom: 20px; /* Separación entre campos */
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.upload-form textarea {
+    resize: none; /* Deshabilitar redimensionar */
+}
+
+.upload-form button {
+    display: block;
+    width: 100%;
+    background-color: #8b5e3c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.upload-form button:hover {
+    background-color: #6f4d3d;
+    transform: scale(1.05); /* Zoom suave */
+}
+
+/* Estilos para el formulario de búsqueda */
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffaf0; /* Fondo claro */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #8b5e3c;
+    border-radius: 8px;
+    font-size: 1em;
+    margin-right: 10px; /* Espacio entre el input y el botón */
+}
+
+.search-form button {
+    background-color: #8b5e3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #6f4d3d;
+    transform: scale(1.05);
+}
+*Footer*/
+
+.Footer {
+  background-color: #ebebeb;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-container div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+  color: #f2f2f7;
+}
+
+.footer p, .footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #eeece5;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(233, 223, 223, 0.7);
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-container div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+  color: #dbe1e6;
+}
+
+.footer p, .footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #d3d4e6;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
