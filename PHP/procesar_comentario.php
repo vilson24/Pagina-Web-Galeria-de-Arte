@@ -2,7 +2,7 @@
 session_start();
 header('Content-Type: application/json');
 
-$comentariosFile = 'comentarios.json';
+$comentariosFile = '../JSON/comentarios.json';
 $comentarios = file_exists($comentariosFile) ? json_decode(file_get_contents($comentariosFile), true) : [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['accion']) && $_POST['
         foreach ($obra['comentarios'] as &$comentario) {
             if ($comentario['id'] == $idComentario) {
                 $comentario['comentario'] = $nuevoTexto;
-                file_put_contents('data.json', json_encode($data, JSON_PRETTY_PRINT));
+                file_put_contents('../JSON/data.json', json_encode($data, JSON_PRETTY_PRINT));
                 echo json_encode(['success' => true]);
                 exit();
             }
@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['accion']) && $_POST['
         foreach ($obra['comentarios'] as &$comentario) {
             if ($comentario['id'] == $idComentario && $comentario['usuario'] === $usuarioActual) {
                 $comentario['comentario'] = $nuevoTexto;
-                file_put_contents('data.json', json_encode($data, JSON_PRETTY_PRINT));
+                file_put_contents('../JSON/data.json', json_encode($data, JSON_PRETTY_PRINT));
                 echo json_encode(['success' => true]);
                 exit();
             }

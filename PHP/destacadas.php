@@ -82,7 +82,7 @@ button:hover {
             </div>
             <div class="tarjeta-servicio">
                 <img src="../img-galeria/oo.jpg" alt="Sexto">
-                <h3><a href="./PHP/sexto.php">Sexto</a></h3>
+                <h3><a href="../PHP/sexto.php">Sexto</a></h3>
             </div>
         </div>
     </section>

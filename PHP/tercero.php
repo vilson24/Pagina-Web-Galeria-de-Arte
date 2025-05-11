@@ -4,13 +4,13 @@ session_start();
 
 // Redirigir al login si no hay sesión iniciada
 if (!isset($_SESSION['usuario'])) {
-    header('Location: login.php');
+    header('Location: ../PHP/login.php');
     exit();
 }
 // Manejar el cierre de sesión
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cerrar_sesion'])) {
     session_destroy();
-    header('Location: login.php');
+    header('Location: ../PHP/login.php');
     exit();
 }
 ?>
@@ -21,8 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cerrar_sesion'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de Arte</title>
-    <link rel="stylesheet" href="tercero.css">
-    <link rel="icon" href="Imagen1-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="../CSS/tercero.css">
+    <link rel="icon" href="../imgs/Imagen1-removebg-preview.png" type="image/png">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <style>
         /* Estilo del botón Cerrar Sesión (igual al de Subir Obra) */
@@ -47,20 +47,20 @@ button:hover {
     <!-- Menú de Navegación -->
     <header class="header">
         <div class="logo">
-            <img src="img-galeria/Log2.png" alt="Logo" class="logo-img">
+            <img src="../img-galeria/Log2.png" alt="Logo" class="logo-img">
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="inicio.php">Inicio</a></li>
-                <li><a href="destacadas.php">Destacadas</a></li>
-                <li><a href="noticias.php">Noticias</a></li>
-                <li><a href="gallery.php">Galería</a></li>
-                <li><a href="subirobra.php">Subir</a></li>
+                <li><a href="../PHP/inicio.php">Inicio</a></li>
+                <li><a href="../PHP/destacadas.php">Destacadas</a></li>
+                <li><a href="../PHP/noticias.php">Noticias</a></li>
+                <li><a href="../PHP/gallery.php">Galería</a></li>
+                <li><a href="../PHP/subirobra.php">Subir</a></li>
             </ul>
         </nav>
         <form method="POST" style="display: inline;">
         <button type="submit" name="cerrar_sesion">
-            <img src="cerrar-sesion.png" alt="Cerrar Sesión" style="width: 30px; height: 30px; border: none; cursor: pointer;">
+            <img src="../imgs/cerrar-sesion.png" alt="Cerrar Sesión" style="width: 30px; height: 30px; border: none; cursor: pointer;">
         </button>
     </form>
     </header>
@@ -72,7 +72,7 @@ button:hover {
               <span class="linea-1">Bienvenidos a</span><br>
               <span class="linea-2">TERCERO DE SECUNDARIA</span>
           </h1>
-          <img src="img-galeria/art1.jpg" alt="Obra de arte">
+          <img src="../img-galeria/art1.jpg" alt="Obra de arte">
       </div>
   </section>
   
@@ -100,7 +100,7 @@ button:hover {
     <div class="container">
         <!-- Tarjeta 1 -->
         <div class="card">
-          <img src="img-galeria/3RO G EMELIA.jpg" alt="Imagen 1">
+          <img src="../img-galeria/3RO G EMELIA.jpg" alt="Imagen 1">
           <div class="info">
             <div class="iconos">
             <i class="fas fa-star"></i>
@@ -114,7 +114,7 @@ button:hover {
         </div>
         <!-- Tarjeta 2 -->
         <div class="card">
-          <img src="img-galeria/3RO B (2).jpg" alt="Imagen 2">
+          <img src="../img-galeria/3RO B (2).jpg" alt="Imagen 2">
           <div class="info">
             <div class="iconos">
               <i class="fas fa-star"></i>
@@ -128,7 +128,7 @@ button:hover {
         </div>
         <!-- Tarjeta 3 -->
         <div class="card">
-          <img src="img-galeria/3RO A.jpg" alt="Imagen 3">
+          <img src="../img-galeria/3RO A.jpg" alt="Imagen 3">
           <div class="info">
             <div class="iconos">
               <i class="fas fa-star"></i>
@@ -142,7 +142,7 @@ button:hover {
         </div>
         <!-- Tarjeta 4 -->
         <div class="card">
-          <img src="img-galeria/3RO F (2).jpg" alt="Imagen 4">
+          <img src="../img-galeria/3RO F (2).jpg" alt="Imagen 4">
           <div class="info">
             <div class="iconos">
               <i class="fas fa-star"></i>
@@ -156,7 +156,7 @@ button:hover {
         </div>
         <!-- Tarjeta 5 -->
         <div class="card">
-          <img src="img-galeria/3RO D DANET.jpg" alt="Imagen 5">
+          <img src="../img-galeria/3RO D DANET.jpg" alt="Imagen 5">
           <div class="info">
             <div class="iconos">
               <i class="fas fa-star"></i>
@@ -170,7 +170,7 @@ button:hover {
         </div>
         <!-- Tarjeta 6 -->
         <div class="card">
-          <img src="img-galeria/3RO E.jpg" alt="Imagen 6">
+          <img src="../img-galeria/3RO E.jpg" alt="Imagen 6">
           <div class="info">
             <div class="iconos">
               <i class="fas fa-star"></i>
@@ -184,7 +184,7 @@ button:hover {
         </div>
         <!-- Tarjeta 7 -->
         <div class="card">
-          <img src="img-galeria/3RO F.jpg" alt="Imagen 7">
+          <img src="../img-galeria/3RO F.jpg" alt="Imagen 7">
           <div class="info">
             <div class="iconos">
               <i class="fas fa-star"></i>
@@ -198,7 +198,7 @@ button:hover {
         </div>
         <!-- Tarjeta 8 -->
         <div class="card">
-          <img src="img-galeria/3RO A (2).jpg" alt="Imagen 8">
+          <img src="../img-galeria/3RO A (2).jpg" alt="Imagen 8">
           <div class="info">
             <div class="iconos">
               <i class="fas fa-star"></i>
@@ -212,7 +212,7 @@ button:hover {
         </div>
         <!-- Tarjeta 9 -->
         <div class="card">
-          <img src="img-galeria/3RO D REYNOSO.jpg" alt="Imagen 9">
+          <img src="../img-galeria/3RO D REYNOSO.jpg" alt="Imagen 9">
           <div class="info">
             <div class="iconos">
               <i class="fas fa-star"></i>
@@ -226,7 +226,7 @@ button:hover {
         </div>
         <!-- Tarjeta 10 -->
         <div class="card">
-          <img src="img-galeria/3RO C.jpg" alt="Imagen 10">
+          <img src="../img-galeria/3RO C.jpg" alt="Imagen 10">
           <div class="info">
             <div class="iconos">
               <i class="fas fa-star"></i>

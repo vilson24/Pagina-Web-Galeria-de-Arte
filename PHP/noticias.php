@@ -4,13 +4,13 @@ session_start();
 
 // Redirigir al login si no hay sesión iniciada
 if (!isset($_SESSION['usuario'])) {
-    header('Location: login.php');
+    header('Location: ../PHP/login.php');
     exit();
 }
 // Manejar el cierre de sesión
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cerrar_sesion'])) {
     session_destroy();
-    header('Location: login.php');
+    header('Location: ../PHP/login.php');
     exit();
 }
 ?>
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cerrar_sesion'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de Arte - Noticias</title>
-    <link rel="stylesheet" href="noti.css">
+    <link rel="stylesheet" href="../CSS/noti.css">
     <link rel="icon" href="Imagen1-removebg-preview.png" type="image/png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
@@ -47,20 +47,20 @@ button:hover {
     <!-- Menú de Navegación -->
     <header class="header">
         <div class="logo">
-            <img src="img-galeria/Log2.png" alt="Logo" class="logo-img">
+            <img src="../img-galeria/Log2.png" alt="Logo" class="logo-img">
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="inicio.php">Inicio</a></li>
-                <li><a href="destacadas.php">Destacadas</a></li>
-                <li><a href="noticias.php">Noticias</a></li>
-                <li><a href="gallery.php">Galería</a></li>
-                <li><a href="subirobra.php">Subir</a></li>
+                <li><a href="../PHP/inicio.php">Inicio</a></li>
+                <li><a href="../PHP/destacadas.php">Destacadas</a></li>
+                <li><a href="../PHP/noticias.php">Noticias</a></li>
+                <li><a href="../PHP/gallery.php">Galería</a></li>
+                <li><a href="../PHP/subirobra.php">Subir</a></li>
             </ul>
         </nav>
         <form method="POST" style="display: inline;">
         <button type="submit" name="cerrar_sesion">
-            <img src="cerrar-sesion.png" alt="Cerrar Sesión" style="width: 30px; height: 30px; border: none; cursor: pointer;">
+            <img src="../imgs/cerrar-sesion.png" alt="Cerrar Sesión" style="width: 30px; height: 30px; border: none; cursor: pointer;">
         </button>
     </form>
     </header>
@@ -69,49 +69,49 @@ button:hover {
     <div class="carousel-container">
         <div class="carousel">
             <div class="carousel-item">
-                <img src="img-galeria/art1.jpg" alt="Exposición 1">
+                <img src="../img-galeria/art1.jpg" alt="Exposición 1">
                 <div class="info-box">
                     <h3>Exposición 'Trazos del Tiempo'</h3>
                     <p>Los estudiantes de 3ro de Secundaria del Instituto Politénico Industrial Don Bosco, nos muestran el paso del tiempo reflejado en los trazos de los artistas.</p>
                 </div>
             </div> 
             <div class="carousel-item">
-                <img src="img-galeria/art2.jpg" alt="Exposición 2">
+                <img src="../img-galeria/art2.jpg" alt="Exposición 2">
                 <div class="info-box">
                     <h3>Exposición 'Muñecas sin rostro'</h3>
                     <p>Brillante exibición es presentada por los alumnos de la institución de las diversas muñecas sin rostro dominicanas.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img-galeria/art3.jpg" alt="Exposición 3">
+                <img src="../img-galeria/art3.jpg" alt="Exposición 3">
                 <div class="info-box">
                     <h3>Exposición 'Artezanias dominicanas'</h3>
                     <p>Exploración espectacular sobre las principales artezanias dominicanas presentada por los alumnos de 6to de Secundaria del Don Bosco.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img-galeria/art4.jpg" alt="Exposición 4">
+                <img src="../img-galeria/art4.jpg" alt="Exposición 4">
                 <div class="info-box">
                     <h3>Exposición 'Arte Caribeño en Tus Manos'</h3>
                     <p>Una hermosa continuación de las principales creaciones artesanales dominicanas por los estudiantes de la institución.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img-galeria/art5.jpg" alt="Exposición 5">
+                <img src="../img-galeria/art5.jpg" alt="Exposición 5">
                 <div class="info-box">
                     <h3>Exposición 'Pilón Dominicano'</h3>
                     <p>Una maravillosa exibición de los distintos pilones artezales dominicanos dirigida por los alumnos de 6to de Secundaria. </p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img-galeria/art6.jpg" alt="Exposición 6">
+                <img src="../img-galeria/art6.jpg" alt="Exposición 6">
                 <div class="info-box">
                     <h3>Exposición 'Raíces y Creaciones'</h3>
                     <p>Una exposición de manualidades que conecta las tradiciones dominicanas con la innovación artística.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img-galeria/art7.jpg" alt="Exposición 7">
+                <img src="../img-galeria/art7.jpg" alt="Exposición 7">
                 <div class="info-box">
                     <h3>Exposición 'Lienzos de Quisqueya'</h3>
                     <p>Galería de pinturas que capturan la esencia y los paisajes de la República Dominicana.</p>
@@ -128,7 +128,7 @@ button:hover {
         </button>
     </div>
 
-    <script src="noti.js"></script>
+    <script src="../JS/noti.js"></script>
     <!-- Footer -->
    <footer class="footer">
     <div class="footer-container">

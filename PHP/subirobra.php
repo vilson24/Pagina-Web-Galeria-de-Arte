@@ -4,12 +4,12 @@ session_start();
 
 // Redirigir al login si no hay sesión iniciada
 if (!isset($_SESSION['usuario'])) {
-    header('Location: login.php');
+    header('Location: ../PHP/login.php');
     exit();
 }
 
 // Configuración de la carpeta de uploads
-$uploadsDir = 'uploads/';
+$uploadsDir = '../uploads/';
 if (!is_dir($uploadsDir)) {
     mkdir($uploadsDir, 0777, true);
 }
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['cerrar_sesion'])) {
         // Manejar el cierre de sesión
         session_destroy();
-        header('Location: login.php');
+        header('Location: ../PHP/login.php');
         exit();
     }
 
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if (move_uploaded_file($fileTmpPath, $fileDestination)) {
             // Guardar datos en JSON
-            $dataFile = 'data.json';
+            $dataFile = '../JSON/data.json';
             $data = file_exists($dataFile) ? json_decode(file_get_contents($dataFile), true) : [];
 
             // Generar un ID único
@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ];
 
             file_put_contents($dataFile, json_encode($data, JSON_PRETTY_PRINT));
-            header('Location: subirobra.php'); // Recargar la página
+            header('Location: ../PHP/subirobra.php'); // Recargar la página
             exit();
         } else {
             $error = "Error al mover el archivo subido.";
@@ -71,26 +71,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subir Nueva Obra</title>
-    <link rel="stylesheet" href="estilosubir.css">
+    <link rel="stylesheet" href="../CSS/estilosubir.css">
     <link rel="icon" href="Imagen1-removebg-preview.png" type="image/png">
 </head>
 <body>
 <header class="header">
     <div class="logo">
-        <img src="img-galeria/Log2.png" alt="Logo" class="logo-img">
+        <img src="../img-galeria/Log2.png" alt="Logo" class="logo-img">
     </div>
     <nav class="menu">
         <ul>
-            <li><a href="inicio.php">Inicio</a></li>
-            <li><a href="destacadas.php">Destacadas</a></li>
-            <li><a href="subirobra.php">Subir</a></li>
-            <li><a href="noticias.php">Noticias</a></li>
-            <li><a href="gallery.php">Galería</a></li>
+            <li><a href="../PHP/inicio.php">Inicio</a></li>
+            <li><a href="../PHP/destacadas.php">Destacadas</a></li>
+            <li><a href="../PHP/subirobra.php">Subir</a></li>
+            <li><a href="../PHP/noticias.php">Noticias</a></li>
+            <li><a href="../PHP/gallery.php">Galería</a></li>
         </ul>
     </nav>
     <form method="POST" style="display: inline;">
         <button type="submit" name="cerrar_sesion">
-            <img src="cerrar-sesion.png" alt="Cerrar Sesión" style="width: 30px; height: 30px; border: none; cursor: pointer;">
+            <img src="../imgs/cerrar-sesion.png" alt="Cerrar Sesión" style="width: 30px; height: 30px; border: none; cursor: pointer;">
         </button>
     </form>
 </header>
